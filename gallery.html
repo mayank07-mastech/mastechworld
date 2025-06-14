@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - MAS TECH WORLD</title>
+  <link rel="icon" type="image/x-icon" href="fevicon.ico.jpg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      background-image: url(BG5.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      padding: 40px;
+    }
+
+    .gallery-container {
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="gallery-container">
+    <h1>📸 MAS TECH WORLD GALLERY</h1>
+    <div class="gallery-grid">
+      <img src="GI1.png" alt="Gallery 1">
+      <img src="GI2.png" alt="Gallery 2">
+      <img src="modem 1 .png" alt="Gallery 3">
+      <img src="MAYANK IMAGE 1.jpg" alt="Gallery 4">
+      <img src="MAYANK IMAGE 2.jpg" alt="Gallery 5">
+      <img src="MAYANK IMAGE 3.jpg" alt="Gallery 6">
+    </div>
+  </div>
+</body>
+</html>
