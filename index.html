@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MAS TECH WORLD-Home</title>
@@ -242,6 +244,69 @@
       margin-top: 60px;
       color: lightgray;
     }
+    @media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .side-menu {
+    width: 0;
+    padding-top: 60px;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+    padding: 8px;
+  }
+
+  p.intro {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+table {
+  min-width: 600px;
+}
+@media (max-width: 600px) {
+  form {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  input, textarea {
+    font-size: 16px;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .swiper {
+    width: 95%;
+    height: auto;
+  }
+
+  .swiper-slide img {
+    height: auto;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -308,6 +373,7 @@
 
   <!-- Products Table -->
   <h2 id="products" style="text-align: center;">📦 Our Products</h2>
+  <div style="overflow-x: auto;">
   <table style="color: black;">
     <caption>Product Details</caption>
     <tr>
@@ -331,6 +397,7 @@
       <td>₹18,999/-</td>
     </tr>
   </table>
+  </div>
 
   <!-- Upcoming Products -->
   <h2 id="upcoming" style="text-align: center;">🚀 Upcoming Products</h2>
@@ -374,8 +441,8 @@
     </div>
   </div>
 
-  <!-- Contact Section -->
-<h2 id="contact" style="text-align: center; margin-top: 50px;">📞 Contact Us</h2>
+  <!-- Enquiry Section -->
+<h2 id="contact" style="text-align: center; margin-top: 50px;">📞Send Us Your Enquiry</h2>
 <form action="https://formspree.io/f/mrbkqlba" method="POST" style="max-width: 500px; margin: 0 auto; padding: 20px;">
   <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 8px;">
   <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 8px;">
